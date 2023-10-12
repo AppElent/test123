@@ -20,4 +20,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           source_repo_path: AppElent/template-devias-react-app-vite
           upstream_branch: main # defaults to main
-          pr_labels: template-sync # optional, no default
+          pr_labels: template-update # optional, no default
