@@ -14,10 +14,14 @@ jobs:
       # To use this repository's private action, you must check out the repository
       - name: Checkout
         uses: actions/checkout@v3
+      - name: Extract branch name
+        shell: bash
+        run: echo "branch=${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}" >> $GITHUB_OUTPUT
+        id: extract_branch
       - name: actions-template-sync
         uses: AndreasAugustin/actions-template-sync@v1.1.3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           source_repo_path: AppElent/template-devias-react-app-vite
-          upstream_branch: main # defaults to main
+          upstream_branch: ${{ steps.extract_branch.outputs.branch }} # defaults to main
           pr_labels: template-update # optional, no default
