@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "@emotion/styled": "^11.14.0",
-    "@faker-js/faker": "^9.3.0",
+    "@faker-js/faker": "^9.4.0",
     "@hello-pangea/dnd": "^17.0.0",
     "@microlink/react-json-view": "^1.23.4",
     "@mui/icons-material": "^6.1.7",
