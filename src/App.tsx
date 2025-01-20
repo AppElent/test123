@@ -24,6 +24,7 @@ function App() {
   return (
     <>
       <ScrollToTop />
+      Test
 
       <Dashboard
         theme={theme}
