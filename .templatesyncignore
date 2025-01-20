@@ -1,0 +1,14 @@
+firebase.json
+.firebaserc
+readme.md
+package-lock.json
+
+src/config
+
+.github/workflows
+
+index.html
+src/App.tsx
+package.json
+tsconfig.app.tsbuildinfo
+tsconfig.node.tsbuildinfo
