@@ -36,7 +36,7 @@ const Dashboard: FC<DashboardProps> = ({ theme, routes, authProvider, dataSource
   //   close: dialog.close,
   // };
 
-  // Custom redirect from root page TODO: check
+  // Custom redirect from root page
   const navigate = useRouter();
   useEffect(() => {
     if (config?.paths?.rootRedirect && window.location.pathname === '/')
