@@ -43,7 +43,7 @@ const Dashboard: FC<DashboardProps> = ({ theme, routes, authProvider, dataSource
       navigate.push(config.paths.rootRedirect);
   }, [navigate]);
 
-  // Initialize routes
+  // Initialize routes using hook
   const element = useRoutes(routes || defaultRoutes);
 
   // Set HTML page title suffix
